@@ -4,31 +4,31 @@ var assert = require('assert');
 var none = require('to-no-case');
 
 it('shouldnt touch space case', function () {
-  assert('a space case string' == none('a space case string'));
+  assert('this is a string' == none('this is a string'));
 });
 
 it('should remove slug case', function () {
-  assert('a slug case string' == none('a-slug-case-string'));
+  assert('this is a string' == none('this-is-a-string'));
 });
 
 it('should remove snake case', function () {
-  assert('a snake case string' == none('a_snake_case_string'));
+  assert('this is a string' == none('this_is_a_string'));
 });
 
 it('should remove camel case', function () {
-  assert('a camel case string' == none('aCamelCaseString'));
+  assert('this is a string' == none('thisIsAString'));
 });
 
 it('should remove constant case', function () {
-  assert('a constant case string' == none('A_CONSTANT_CASE_STRING'));
+  assert('this is a string' == none('THIS_IS_A_STRING'));
 });
 
 it('should remove sentence case', function () {
-  assert('a sentence case string.' == none('A sentence case string.'));
+  assert('this is a string.' == none('This is a string.'));
 });
 
 it('should remove title case', function () {
-  assert('a title: case of string' == none('A Title: Case of String'));
+  assert('this: is a string' == none('This: Is a String'));
 });
 
 });

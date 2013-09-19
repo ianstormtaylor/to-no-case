@@ -57,7 +57,7 @@ function unseparate (string) {
  * Camelcase splitter.
  */
 
-var camelSplitter = /([^A-Z])([A-Z])/g;
+var camelSplitter = /(.)([A-Z]+)/g;
 
 
 /**
@@ -68,7 +68,7 @@ var camelSplitter = /([^A-Z])([A-Z])/g;
  */
 
 function uncamelize (string) {
-  return string.replace(camelSplitter, function (m, lower, upper) {
-    return lower + ' ' + upper.toLowerCase();
+  return string.replace(camelSplitter, function (m, previous, uppers) {
+    return previous + ' ' + uppers.toLowerCase().split('').join(' ');
   });
 }

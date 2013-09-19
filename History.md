@@ -1,3 +1,7 @@
+0.1.0 - September 18, 2013
+--------------------------
+* fix camel case bug
+
 0.0.3 - September 18, 2013
 --------------------------
 * handle unknown cases

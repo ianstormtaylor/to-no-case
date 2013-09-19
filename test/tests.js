@@ -3,6 +3,10 @@ describe('to-no-case', function () {
 var assert = require('assert');
 var none = require('to-no-case');
 
+it('shouldnt touch space case', function () {
+  assert('a space case string' == none('a space case string'));
+});
+
 it('should remove slug case', function () {
   assert('a slug case string' == none('a-slug-case-string'));
 });

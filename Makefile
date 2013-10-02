@@ -6,7 +6,7 @@ components: component.json
 	@component install --dev
 
 clean:
-	@rm -fr build components
+	@rm -fr build node_modules components
 
 node_modules: package.json
 	@npm install

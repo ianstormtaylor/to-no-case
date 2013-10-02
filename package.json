@@ -3,6 +3,6 @@
   "repository": "git://github.com/ianstormtaylor/to-no-case.git",
   "license": "MIT",
   "version": "0.1.1",
-  "description": "Convert a string to no case.",
+  "description": "Remove an existing case from a string.",
   "keywords": ["case", "remove", "camel", "camelcase", "snake", "snakecase", "slug", "slugcase", "string"]
 }

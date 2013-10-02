@@ -4,6 +4,7 @@
 
 ## Installation
 
+    $ npm install to-no-case
     $ component install ianstormtaylor/to-no-case
 
 ## Example

@@ -1,6 +1,6 @@
 {
   "name": "to-no-case",
-  "repoistory": "git://github.com/ianstormtaylor/to-no-case.git",
+  "repository": "git://github.com/ianstormtaylor/to-no-case.git",
   "license": "MIT",
   "version": "0.1.0",
   "description": "Convert a string to no case.",

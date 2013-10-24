@@ -2,7 +2,7 @@
   "name": "to-no-case",
   "repo": "ianstormtaylor/to-no-case",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Remove an existing case from a string.",
   "keywords": ["case", "remove", "camel", "camelcase", "snake", "snakecase", "slug", "slugcase", "string"],
   "development": {

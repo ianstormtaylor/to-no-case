@@ -29,6 +29,10 @@ describe('to-no-case', function () {
     it('should handle single letter first words', function () {
       assert('a string is this' == none('AStringIsThis'));
     });
+
+    it('should handle single letter first words with two words', function () {
+      assert('a string' == none('AString'));
+    });
   });
 
   describe('slug', function () {

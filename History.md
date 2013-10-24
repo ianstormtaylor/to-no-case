@@ -1,3 +1,7 @@
+0.1.2 - October 24, 2013
+------------------------
+* fix camel/pascal case detection
+
 0.1.1 - October 1, 2013
 -----------------------
 * typo :blush:

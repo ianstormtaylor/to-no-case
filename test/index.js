@@ -59,4 +59,10 @@ describe('to-no-case', function () {
     });
   });
 
+  describe('non-latin characters', function () {
+    it('should return identical string', function () {
+      assert('ارژنگ' == none('ارژنگ'));
+    });
+  });
+
 });

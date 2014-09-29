@@ -24,7 +24,7 @@ var hasSeparator = /[\W_]/;
 
 function toNoCase (string) {
   if (hasSpace.test(string)) return string.toLowerCase();
-  if (hasSeparator.test(string)) return unseparate(string).toLowerCase();
+  if (hasSeparator.test(string)) return (unseparate(string) || string).toLowerCase();
   return uncamelize(string).toLowerCase();
 }
 

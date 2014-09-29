@@ -1,3 +1,8 @@
+
+0.1.3 - September 29, 2014
+--------------------------
+* fix non-latin characters
+
 0.1.2 - October 24, 2013
 ------------------------
 * fix camel/pascal case detection

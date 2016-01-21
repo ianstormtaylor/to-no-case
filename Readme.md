@@ -1,7 +1,7 @@
 
 # to-no-case
 
-Remove any existing casing from a string. Part of the series of [case] helpers.
+Remove any existing casing from a string. Part of the series of [case helpers](https://github.com/ianstormtaylor/to-case).
 
 
 ## Installation

@@ -2,6 +2,10 @@
 var assert = require('assert')
 var none = require('..')
 
+/**
+ * Tests.
+ */
+
 describe('to-no-case', function () {
 
   describe('space', function () {

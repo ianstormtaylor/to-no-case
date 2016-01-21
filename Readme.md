@@ -1,5 +1,5 @@
 
-# to-no-case [https://travis-ci.org/ianstormtaylor/to-no-case.svg?branch=master]
+# to-no-case [![Build Status](https://travis-ci.org/ianstormtaylor/to-no-case.svg?branch=master)](https://travis-ci.org/ianstormtaylor/to-no-case)
 
 Remove any existing casing from a string. Part of the series of [case helpers](https://github.com/ianstormtaylor/to-case).
 

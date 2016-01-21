@@ -1,18 +1,16 @@
 
 /**
- * Expose `toNoCase`.
+ * Export.
  */
 
-module.exports = toNoCase;
-
+module.exports = toNoCase
 
 /**
  * Test whether a string is camel-case.
  */
 
-var hasSpace = /\s/;
-var hasSeparator = /[\W_]/;
-
+var hasSpace = /\s/
+var hasSeparator = /[\W_]/
 
 /**
  * Remove any starting case from a `string`, like camel or snake, but keep
@@ -22,19 +20,17 @@ var hasSeparator = /[\W_]/;
  * @return {String}
  */
 
-function toNoCase (string) {
-  if (hasSpace.test(string)) return string.toLowerCase();
-  if (hasSeparator.test(string)) return (unseparate(string) || string).toLowerCase();
-  return uncamelize(string).toLowerCase();
+function toNoCase(string) {
+  if (hasSpace.test(string)) return string.toLowerCase()
+  if (hasSeparator.test(string)) return (unseparate(string) || string).toLowerCase()
+  return uncamelize(string).toLowerCase()
 }
-
 
 /**
  * Separator splitter.
  */
 
-var separatorSplitter = /[\W_]+(.|$)/g;
-
+var separatorSplitter = /[\W_]+(.|$)/g
 
 /**
  * Un-separate a `string`.
@@ -43,19 +39,17 @@ var separatorSplitter = /[\W_]+(.|$)/g;
  * @return {String}
  */
 
-function unseparate (string) {
+function unseparate(string) {
   return string.replace(separatorSplitter, function (m, next) {
-    return next ? ' ' + next : '';
-  });
+    return next ? ' ' + next : ''
+  })
 }
-
 
 /**
  * Camelcase splitter.
  */
 
-var camelSplitter = /(.)([A-Z]+)/g;
-
+var camelSplitter = /(.)([A-Z]+)/g
 
 /**
  * Un-camelcase a `string`.
@@ -64,8 +58,8 @@ var camelSplitter = /(.)([A-Z]+)/g;
  * @return {String}
  */
 
-function uncamelize (string) {
+function uncamelize(string) {
   return string.replace(camelSplitter, function (m, previous, uppers) {
-    return previous + ' ' + uppers.toLowerCase().split('').join(' ');
-  });
+    return previous + ' ' + uppers.toLowerCase().split('').join(' ')
+  })
 }

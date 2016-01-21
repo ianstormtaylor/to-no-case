@@ -1,8 +1,26 @@
 {
   "name": "to-no-case",
+  "version": "1.0.0",
+  "description": "Remove any existing casing from a string.",
   "repository": "git://github.com/ianstormtaylor/to-no-case.git",
   "license": "MIT",
-  "version": "0.1.3",
-  "description": "Remove an existing case from a string.",
-  "keywords": ["case", "remove", "camel", "camelcase", "snake", "snakecase", "slug", "slugcase", "string"]
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "keywords": [
+    "camel",
+    "camelcase",
+    "case",
+    "pascal",
+    "pascalcase",
+    "sentence",
+    "sentencecase",
+    "slug",
+    "slugcase",
+    "snake",
+    "snakecase",
+    "string",
+    "title",
+    "titlecase"
+  ]
 }

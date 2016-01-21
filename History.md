@@ -1,4 +1,11 @@
 
+1.0.0 - January 21, 2016
+------------------------
+* drop component support
+* cleanup readme
+* add travis ci
+* update coding style
+
 0.1.3 - September 29, 2014
 --------------------------
 * fix non-latin characters

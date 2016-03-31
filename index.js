@@ -11,6 +11,7 @@ module.exports = toNoCase
 
 var hasSpace = /\s/
 var hasSeparator = /[\W_]/
+var hasCamel = /([a-z][A-Z]|[A-Z][a-z])/
 
 /**
  * Remove any starting case from a `string`, like camel or snake, but keep
@@ -23,7 +24,8 @@ var hasSeparator = /[\W_]/
 function toNoCase(string) {
   if (hasSpace.test(string)) return string.toLowerCase()
   if (hasSeparator.test(string)) return (unseparate(string) || string).toLowerCase()
-  return uncamelize(string).toLowerCase()
+  if (hasCamel.test(string)) return uncamelize(string).toLowerCase()
+  return string.toLowerCase()
 }
 
 /**

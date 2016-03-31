@@ -26,6 +26,18 @@ describe('to-no-case', function () {
     })
   })
 
+  describe('upper', function () {
+    it('should not split upper case', function () {
+      assert.equal(none('UPPERCASE'), 'uppercase')
+    })
+  })
+
+  describe('lower', function () {
+    it('should not split lower case', function () {
+      assert.equal(none('lowercase'), 'lowercase')
+    })
+  })
+
   describe('pascal', function () {
     it('should remove pascal case', function () {
       assert.equal(none('ThisIsAString'), 'this is a string')

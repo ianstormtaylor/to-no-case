@@ -1,4 +1,8 @@
 
+1.0.1 - March 31, 2016
+----------------------
+* fix broken uppercase handling
+
 1.0.0 - January 21, 2016
 ------------------------
 * drop component support

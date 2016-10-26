@@ -78,7 +78,11 @@ describe('to-no-case', function () {
 
   describe('junk', function () {
     it('should remove casing but preserve characters', function () {
-      assert.equal(none('RAnDom -junk$__loL!'), 'random -junk$__lol!')
+      assert.equal(none('rAnDom -junk$__loL!'), 'random -junk$__lol!')
+    })
+
+    it('should remove casing but preserve characters even without white space', function () {
+      assert.equal(none('$50,000,000'), '$50,000,000')
     })
   })
 

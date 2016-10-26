@@ -10,7 +10,7 @@ module.exports = toNoCase
  */
 
 var hasSpace = /\s/
-var hasSeparator = /[\W_]/
+var hasSeparator = /(_|-|\.|:)/
 var hasCamel = /([a-z][A-Z]|[A-Z][a-z])/
 
 /**

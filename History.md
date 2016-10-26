@@ -1,4 +1,8 @@
 
+1.0.2 - October 25, 2016
+------------------------
+* fix separator logic to avoid false positives
+
 1.0.1 - March 31, 2016
 ----------------------
 * fix broken uppercase handling

@@ -1,6 +1,6 @@
 {
   "name": "to-no-case",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Remove any existing casing from a string.",
   "repository": "git://github.com/ianstormtaylor/to-no-case.git",
   "license": "MIT",
